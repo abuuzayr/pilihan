@@ -65,3 +65,6 @@ src/playground
 
 # dist folder
 public
+
+# cache folder
+.cache
