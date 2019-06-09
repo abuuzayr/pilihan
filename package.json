@@ -1,0 +1,30 @@
+{
+  "name": "pilihan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Abu Uzayr <abu.uzayr@builtforfifty.com> (https://github.com/abuuzayr)",
+  "license": "MIT",
+  "scripts": {
+    "serve": "live-server public/",
+    "build": "webpack",
+    "dev-server": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "live-server": "^1.2.1",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-modal": "^3.8.1",
+    "validator": "^10.11.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
