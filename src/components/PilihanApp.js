@@ -4,6 +4,13 @@ import Options from './Options';
 import AddOption from './AddOption';
 import Header from './Header';
 import OptionModal from './OptionModal';
+import styled from 'styled-components';
+
+const Wrap = styled.div`
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 16px;
+`
 
 export default class PilihanApp extends React.Component {
     state = {
@@ -63,19 +70,21 @@ export default class PilihanApp extends React.Component {
     render() {
         return (
             <div>
-                <Header title="Title 1" />
-                <Action
-                    hasOptions={this.state.options.length > 0}
-                    handlePick={this.handlePick}
-                />
-                <Options
-                    options={this.state.options}
-                    removeAll={this.handleDeleteOptions}
-                    removeOne={this.handleDeleteOption}
-                />
-                <AddOption
-                    handleAddOption={this.handleAddOption}
-                />
+                <Header title="Pilihan" />
+                <Wrap>
+                    <Action
+                        hasOptions={this.state.options.length > 0}
+                        handlePick={this.handlePick}
+                    />
+                    <Options
+                        options={this.state.options}
+                        removeAll={this.handleDeleteOptions}
+                        removeOne={this.handleDeleteOption}
+                    />
+                    <AddOption
+                        handleAddOption={this.handleAddOption}
+                    />
+                </Wrap>
                 <OptionModal
                     modalText={this.state.option}
                     closeModal={this.handleCloseModal}
