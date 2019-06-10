@@ -4,10 +4,23 @@ import styled, { css } from 'styled-components';
 const Button = styled.button`
     background: var(--purple);
     border: none;
-    border-bottom: .3rem solid darken(var(--purple), 10%);
+    border-bottom: .6rem solid darken(var(--purple), 10%);
     color: white;
-    font-weight: 500;
-    padding: var(--s-size);
+    font-weight: bold;
+    font-size: $l-size;
+    margin-bottom: $m-size;
+    padding: 2.4rem;
+    width: 100%;
+    
+    &:disabled {
+        opacity: .5;
+    }
+
+    @media (min-width: var(--desktop-breakpoint)) {
+        .big-button {
+            margin-bottom: var(--xl-size);
+        }
+    }
 
     ${props => props.isLink && css`
         background: none;
