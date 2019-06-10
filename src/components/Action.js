@@ -7,8 +7,8 @@ const Button = styled.button`
     border-bottom: .6rem solid darken(var(--purple), 10%);
     color: white;
     font-weight: bold;
-    font-size: $l-size;
-    margin-bottom: $m-size;
+    font-size: var(--l-size);
+    margin-bottom: var(--m-size);
     padding: 2.4rem;
     width: 100%;
     
@@ -16,7 +16,7 @@ const Button = styled.button`
         opacity: .5;
     }
 
-    @media (min-width: var(--desktop-breakpoint)) {
+    @media (min-width: 45rem) {
         .big-button {
             margin-bottom: var(--xl-size);
         }
@@ -25,7 +25,7 @@ const Button = styled.button`
     ${props => props.isLink && css`
         background: none;
         border: none;
-        color: $off-white;
+        color: var(--off-white);
         padding: 0;
     `}
 `
