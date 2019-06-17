@@ -9,11 +9,11 @@ const ErrorMsg = styled.p`
 `
 
 const Button = styled.button`
-    background: var(--purple);
+    background: var(--red);
     border: none;
-    border-bottom: .3rem solid darken(var(--purple), 10%);
+    border-bottom: .3rem solid var(--underred);
     color: white;
-    font-weight: 500;
+    font-size: 1.5rem;
     padding: var(--s-size);
 `
 

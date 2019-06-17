@@ -10,6 +10,7 @@ const Container = styled.div`
 const HeaderDiv = styled.div`
     background: var(--off-black);
     color: white;
+    font-weight: 900;
     margin-bottom: var(--m-size);
     padding: var(--m-size) 0;
 

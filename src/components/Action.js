@@ -2,9 +2,9 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 const Button = styled.button`
-    background: var(--purple);
+    background: var(--red);
     border: none;
-    border-bottom: .6rem solid darken(var(--purple), 10%);
+    border-bottom: .6rem solid var(--underred);
     color: white;
     font-weight: bold;
     font-size: var(--l-size);
