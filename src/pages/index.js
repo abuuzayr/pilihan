@@ -7,6 +7,7 @@ export default () => (
         <Helmet>
             <meta charSet="utf-8" />
             <title>Pilihan - Choose!</title>
+            <link href="https://fonts.googleapis.com/css?family=Dosis:400,700&display=swap" rel="stylesheet"></link>
         </Helmet>
         <PilihanApp />
     </div>

@@ -10,7 +10,8 @@ html {
   --blue: #3c4251;
   --light-blue: #464b5e;
   --off-white: #a5afd7;
-  --purple: #8357c5;
+  --red: #fe5f55;
+  --underred: #a64942;
 
   /* Spacing */
 
@@ -24,10 +25,18 @@ body {
   background: var(--dark-blue);
   font-family: Helvetica, Arial, sans-serif;
   font-size: var(--m-size);
+  padding: 0;
 }
 
 button {
   cursor: pointer;
+  outline: none;
+}
+
+body,
+button,
+input {
+  font-family: 'Dosis', sans-serif;
 }
 
 button:disabled {
