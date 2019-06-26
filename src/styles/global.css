@@ -12,6 +12,7 @@ html {
   --off-white: #a5afd7;
   --red: #fe5f55;
   --underred: #a64942;
+  --white: #ffffff;
 
   /* Spacing */
 
@@ -25,7 +26,7 @@ body {
   background: var(--dark-blue);
   font-family: Helvetica, Arial, sans-serif;
   font-size: var(--m-size);
-  padding: 0;
+  margin: 0;
 }
 
 button {
